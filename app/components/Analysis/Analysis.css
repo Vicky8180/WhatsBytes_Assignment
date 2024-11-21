@@ -5,7 +5,13 @@
     display: flex;
     flex-direction: column;
     gap: 2.5vh;
+    border: 1px solid #ddd;
+    border-radius: 5px; 
 
+}
+.qa_container{
+    border: 1px solid #ddd;
+    border-radius: 5px; 
 }
 
 .s_a_c_heading{
@@ -38,3 +44,76 @@
     
 
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Analysis.css */
+.syllabus_analysis_container {
+    /* width: 80%;
+    margin: auto; */
+    font-family: Arial, sans-serif;
+
+    border: 1px solid #ddd;
+    border-radius: 5px; 
+    padding: 3vh;
+  }
+  
+  .s_a_c_heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .each_subject_box {
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .subject_name {
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .subject_percentage {
+    display: flex;
+    align-items: center;
+    flex: 2;
+  }
+  
+  .progressbar_box {
+    flex: 1;
+    height: 20px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+  
+  .progressbar {
+    display: block;
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+  }
+  
+  .percentage_label {
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+  }
+  

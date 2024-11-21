@@ -1,66 +1,39 @@
-// import React from 'react'
-// import "./Analysis.css"
 
-// const EachSubject=(subName:String, subPercentage:Number)=>{
-//     return (
-//         <>
-// <div className='each_subject_box'>
-//     <div className='subject_name'>{subName}</div>
-//     <div className='subject_percentage'>{subPercentage:Number}</div>
-// </div>
+import React from "react";
+import "./Analysis.css";
 
-//         </>
-//     )
-// }
-
-// export default function SyllbusAnalysis() {
-
-//   return (
-//    <>
-//    <div className='syllbus_ana_container'>
-// <EachSubject subName={"hel"} subPercenatge={90}/>
-//    </div>
-//    </>
-//   )
-// }
-
-
-import React from 'react'
-import './Analysis.css'
-
-// Correct the props definition by using destructuring and proper type annotations
 interface EachSubjectProps {
   subName: string;
   subPercentage: number;
+  color:string;
 }
 
-const EachSubject: React.FC<EachSubjectProps> = ({ subName, subPercentage }) => {
+const EachSubject: React.FC<EachSubjectProps> = ({ subName, subPercentage, color }) => {
   return (
     <div className="each_subject_box">
       <div className="subject_name">{subName}</div>
-      
       <div className="subject_percentage">
-        <div className='progressbar_box'>
-            <span className='progressbar' ></span>
-            </div> 
-        <span>{subPercentage}</span>
-        </div> 
-     
+        <div className="progressbar_box">
+
+          <span
+            className="progressbar"
+            style={{ width: `${subPercentage}%` , backgroundColor:color }}
+          ></span>
+        </div>
+        <span className="percentage_label">{subPercentage}%</span>
+      </div>
     </div>
   );
-}
+};
 
-export default function SyllbusAnalysis() {
+export default function SyllabusAnalysis() {
   return (
-    <div className="syllbus_ana_container">
-       
-       <div className='s_a_c_heading'> Subject Wise Analysis</div>
-      <EachSubject subName="HTML Tools, Forms, History" subPercentage={80} />
-      <EachSubject subName="Tag & Referneces in HTML" subPercentage={60} />
-      <EachSubject subName="Table & Referneces in HTML" subPercentage={24} />
-      <EachSubject subName="Table & Css Bascis" subPercentage={86} />
-    
-    
+    <div className="syllabus_analysis_container">
+      <div className="s_a_c_heading">Subject Wise Analysis</div>
+      <EachSubject subName="HTML Tools, Forms, History" subPercentage={80} color="#2196f3"/>
+      <EachSubject subName="Tag & References in HTML" subPercentage={60} color="#ff9800"/>
+      <EachSubject subName="Table & References in HTML" subPercentage={24} color="#f44336"/>
+      <EachSubject subName="Table & CSS Basics" subPercentage={86} color="#4caf50"/>
     </div>
   );
 }

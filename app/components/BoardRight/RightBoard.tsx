@@ -1,6 +1,8 @@
 import React from 'react'
 import "./RightBoard.css"
 import SyllbusAnalysis from '../Analysis/SyllbusAnalysis'
+import QuestionAnalysis from '../Analysis/QuestionAnalysis'
+import GraphAnalysis from '../Analysis/GraphComperison'
 export default function RightBoard() {
   return (
  <>
@@ -50,10 +52,15 @@ export default function RightBoard() {
 
 
             </div>
+           
            </div>
+           <div className='rb_left_bottom_2'>
+                <GraphAnalysis/>
+            </div>
         </div>
         <div className='r_b_b_right'>
             <SyllbusAnalysis/>
+            <QuestionAnalysis/>
         </div>
     </div>
  </div>
