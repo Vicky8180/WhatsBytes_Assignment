@@ -1,0 +1,40 @@
+
+
+.syllbus_ana_container{
+    padding: 3vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh;
+
+}
+
+.s_a_c_heading{
+    height: 5vh;
+    align-items: center;
+    display: flex;
+    font-size: 18px; /* Slightly larger size for emphasis */
+    font-weight: 600; /* Semi-bold for a clean bold look */
+    color: #212529; /* Darker shade of black for softer contrast */
+    line-height: 1.4; /* Improved readability */
+}
+
+.subject_percentage{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: antiquewhite; */
+}
+
+.progressbar_box{
+    width: 100%;
+    background-color: red;
+    /* display: inline-block; */
+    opacity: 0.8;
+}
+
+.progressbar{
+    width: 100%;
+    height: 1vh;
+    background-color: red;
+    
+
+}

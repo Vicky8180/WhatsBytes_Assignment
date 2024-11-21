@@ -1,0 +1,134 @@
+.rightboard_container{
+    /* background-color: aqua; */
+    width: 94%;
+}
+
+
+.rb_heading{
+    height: 7vh;
+    align-items: center;
+    display: flex;
+
+}
+.rb_bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rb_b_left{
+    width: 50%;
+}
+
+.r_b_b_right{
+    width: 40%;
+    background-color: aquamarine;
+}
+
+
+.bottom_left img{
+    height: 5vh;
+    width: 5vh;
+}
+
+.rb_b_left{
+ display: flex;
+ flex-direction: column;
+ gap: 4vh;
+}
+.rb_left_bottom_1{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 3vh;
+    border: 1px solid #ddd;
+    border-radius: 4px; 
+    padding-left: 1.3vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.bottom_middle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the left */
+    gap: 4px; /* Space between the lines */
+    font-family: 'Inter', Arial, sans-serif; /* Clean and modern font */
+  }
+
+.b_m_1 {
+    font-size: 18px; /* Slightly larger size for emphasis */
+    font-weight: 600; /* Semi-bold for a clean bold look */
+    color: #212529; /* Darker shade of black for softer contrast */
+    line-height: 1.4; /* Improved readability */
+  }
+  
+  .b_m_2 {
+    font-size: 14px; /* Smaller for secondary information */
+    font-weight: 400; /* Normal weight for clarity */
+    color: #6c757d; /* Subtle gray color */
+    line-height: 1.4; /* Matches the line spacing */
+  }
+.bottom_right_btn{
+    color: white;
+    width: 12vh;
+   height: 5vh;
+   align-items: center;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   font-weight: 600;
+   border-radius: 1vh;
+    background-color: blue;
+    cursor: pointer;
+}
+
+
+.bottom_left_2_heading{
+    height: 5vh;
+    align-items: center;
+    display: flex;
+    font-size: 18px; /* Slightly larger size for emphasis */
+    font-weight: 600; /* Semi-bold for a clean bold look */
+    color: #212529; /* Darker shade of black for softer contrast */
+    line-height: 1.4; /* Improved readability */
+}
+
+
+.rb_left_bottom_2{
+
+   
+    width: 100%;
+ 
+    border: 1px solid #ddd;
+    border-radius: 4px; 
+    padding-left: 1.5vh;
+    padding-top: 0.5vh;
+    padding-bottom: 3vh;
+
+}
+
+.rb_left_bottom_2_box{
+    display: flex;
+    gap: 3vh;
+
+}
+
+.rb_left_bottom_2_box > .box_1 {
+    border-right: none/* Add right border */
+  }
+  
+  .rb_left_bottom_2_box > .box_1:not(:last-child) {
+    border-right: 1px solid #ddd; /* Add right border to all except the last */
+  }
+.box_1{
+    display: flex;
+    gap: 1vh;
+    width: 25vh;
+    height: 8vh;
+    align-items: center;
+    justify-content: center;
+}
+.box_1 img{
+    height: 5vh;
+    width: 5vh;
+}
